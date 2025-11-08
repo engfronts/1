@@ -1,0 +1,136 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Engineering Frontiers | Submit & Contact</title>
+    <meta name="description" content="Contact the Engineering Frontiers editorial office and submit manuscripts via a secure email form." />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="icon" type="image/png" href="assets/images/logo-primary.png" />
+</head>
+<body id="top" data-page="contact">
+    <header class="site-header">
+        <a href="index.html" class="brand" aria-label="Engineering Frontiers homepage">
+            <img src="assets/images/logo-with-text.png" alt="Engineering Frontiers wordmark" />
+        </a>
+        <nav class="primary-nav" aria-label="Primary">
+            <a href="index.html" class="nav-link" data-page="home">Home</a>
+            <a href="journal.html" class="nav-link" data-page="journal">Journal</a>
+            <a href="scope.html" class="nav-link" data-page="scope">Scope</a>
+            <a href="articles.html" class="nav-link" data-page="articles">Issues</a>
+            <a href="contact.html" class="nav-link" data-page="contact">Submit</a>
+        </nav>
+        <a class="cta" href="contact.html">Submit Manuscript</a>
+    </header>
+
+    <main class="content">
+        <header class="page-heading">
+            <p class="eyebrow">Contact</p>
+            <h1>Submit and Stay Connected</h1>
+            <p>Send manuscripts, abstracts, or enquiries directly to the editorial office.</p>
+        </header>
+
+        <section class="panel contact-layout">
+            <form
+                class="contact-form"
+                action="https://formsubmit.co/engfront@yeah.net"
+                method="POST"
+                enctype="multipart/form-data"
+                data-confirm="Submit this message and any attached files to the Engineering Frontiers editorial office?"
+                data-verify="code"
+            >
+                <input type="hidden" name="_subject" value="Engineering Frontiers Submission" />
+                <input type="hidden" name="_captcha" value="false" />
+                <input type="hidden" name="_autoresponse" value="Thank you for contacting Engineering Frontiers. Our editorial office will review your message shortly." />
+                <label>
+                    Full Name
+                    <input type="text" name="name" placeholder="Jane Smith" required />
+                </label>
+                <label>
+                    Email Address
+                    <input type="email" name="email" placeholder="researcher@university.edu" required />
+                </label>
+                <label>
+                    Manuscript Title
+                    <input type="text" name="manuscript_title" placeholder="Exact manuscript title" required />
+                </label>
+                <label>
+                    Manuscript Category
+                    <select name="category" required>
+                        <option value="Research Article">Research Article</option>
+                        <option value="Review">Review</option>
+                        <option value="Perspective">Perspective</option>
+                        <option value="Editorial">Editorial</option>
+                    </select>
+                </label>
+                <label>
+                    Upload Manuscript (PDF)
+                    <input type="file" name="attachment_pdf" accept="application/pdf" />
+                </label>
+                <label>
+                    Upload Manuscript (Word)
+                    <input type="file" name="attachment_word" accept=".doc,.docx,application/msword,application/vnd.openxmlformats-officedocument.wordprocessingml.document" />
+                </label>
+                <label>
+                    Message or Abstract
+                    <textarea name="message" rows="6" placeholder="Share highlights, context, and any questions for the editorial team." required></textarea>
+                </label>
+                <label class="verification-field">
+                    Human Verification
+                    <div class="verification-field__controls">
+                        <canvas class="verification-canvas" width="180" height="60" data-code-canvas aria-hidden="true"></canvas>
+                        <input type="text" name="verification" placeholder="Enter the code" data-code-input required />
+                        <button type="button" class="verification-refresh" data-code-refresh aria-label="Generate a new verification code">&#x21bb;</button>
+                    </div>
+                    <small class="microcopy">Enter the six-character code exactly as shown. Letters are case-insensitive.</small>
+                </label>
+                <p class="form-error" role="alert" hidden>Please answer the verification question correctly.</p>
+                <button type="submit">Send to Editorial Office</button>
+                <p class="microcopy">Submitting this form (and any attached files) sends a secure email directly to engfront@yeah.net via FormSubmit. No database or custom server is required.</p>
+                <p class="microcopy">Once you reach the confirmation page, expect an editor reply if we have received your manuscript. If no response arrives shortly, please email the files directly to <a href="mailto:engfront@yeah.net">engfront@yeah.net</a>.</p>
+            </form>
+
+            <div class="info-card">
+                <h2>Editorial Office</h2>
+                <ul>
+                    <li>Email: <a href="mailto:engfront@yeah.net">engfront@yeah.net</a> (form submissions arrive here automatically)</li>
+                    <li>Phone: +86 13773558365</li>
+                </ul>
+                <h3>Locations</h3>
+                <p>Hong Kong - Flat 602, 6/F, Kai Ru Commercial Building, 2C Argyle Street | Tel: 852-91435865</p>
+                <p>Shanghai - Room 406, Building 2, Shengxingle Business Park, 1455 Nan Suzhou Road, Jing'an District</p>
+                <div class="newsletter">
+                    <p><strong>Submission Support:</strong> We also accept email submissions—send manuscripts directly to <a href="mailto:engfront@yeah.net">engfront@yeah.net</a>. Please format references in APA style, and we recommend using EndNote for citation management.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div>
+            <img src="assets/images/logo-with-text.png" alt="Engineering Frontiers wordmark" />
+            <p>Engineering Frontiers - Building bridges across engineering disciplines for a sustainable and innovative future.</p>
+        </div>
+        <div class="footer-meta">
+            <p>&copy; 2025 China Architecture &amp; Culture Press</p>
+            <p>Flat 602, 6/F, Kai Ru Commercial Building, 2C Argyle Street - Hong Kong</p>
+            <p>Room 406, Building 2, Shengxingle Business Park, 1455 Nan Suzhou Road, Jing'an District, Shanghai</p>
+        </div>
+        <a href="#top" class="back-to-top">Back to top &uarr;</a>
+    </footer>
+
+    <script src="js/main.js" defer></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
