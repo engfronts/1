@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Engineering Frontiers | Reviewer Sign-In</title>
+    <meta name="description" content="Static reviewer login for Engineering Frontiers. Authenticate and proceed to upload scores, comments, and attachments." />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="icon" type="image/png" href="assets/images/logo-primary.png" />
+</head>
+<body id="top" data-page="reviewers" data-view="login">
+    <header class="site-header">
+        <a href="index.html" class="brand" aria-label="Engineering Frontiers homepage">
+            <img src="assets/images/logo-with-text.png" alt="Engineering Frontiers wordmark" />
+        </a>
+        <nav class="primary-nav" aria-label="Primary">
+            <a href="index.html" class="nav-link" data-page="home">Home</a>
+            <a href="journal.html" class="nav-link" data-page="journal">Journal</a>
+            <a href="scope.html" class="nav-link" data-page="scope">Scope</a>
+            <a href="template.html" class="nav-link" data-page="template">Template</a>
+            <a href="articles.html" class="nav-link" data-page="articles">Issues</a>
+            <a href="contact.html" class="nav-link" data-page="contact">Submit</a>
+            <a href="reviewer-login.html" class="nav-link" data-page="reviewers">Reviewer Center</a>
+        </nav>
+        <a class="cta" href="contact.html">Submit Manuscript</a>
+    </header>
+
+    <main class="content auth-page">
+        <header class="page-heading">
+            <p class="eyebrow">Reviewer Center</p>
+            <h1>Secure Reviewer Sign-In</h1>
+            <p>Use the credentials assigned by the editorial office to unlock the reviewer workspace and submit evaluations.</p>
+        </header>
+
+        <section class="panel auth-layout">
+            <form class="auth-card" id="reviewer-login-form" autocomplete="off">
+                <p class="microcopy">Reviewer credentials are issued individually by the editorial office. Validation happens locally in your browser only.</p>
+                <label>
+                    Reviewer Account
+                    <input type="text" name="username" placeholder="Enter your assigned reviewer ID" inputmode="text" autocomplete="username" required />
+                </label>
+                <label>
+                    Password
+                    <input type="password" name="password" placeholder="Enter password" autocomplete="current-password" required />
+                </label>
+                <label class="remember-field">
+                    <input type="checkbox" name="remember" value="1" />
+                    <span>Keep me signed in on this device for 12 hours</span>
+                </label>
+                <p class="form-error" data-auth-error hidden>Incorrect account or password. Please try again.</p>
+                <button type="submit">Enter Reviewer Center</button>
+                <p class="microcopy">Need to revoke access? Use the "Sign out" button inside the Reviewer Center header.</p>
+            </form>
+
+            <div class="auth-info">
+                <h2>Reviewer Guidelines</h2>
+                <ul>
+                    <li>Keep manuscripts and login details confidential. Never forward credentials or files to unapproved parties.</li>
+                    <li>Provide evidence-based comments that justify the numeric score and clearly distinguish strengths, gaps, and revision needs.</li>
+                    <li>Use only the account assigned by Engineering Frontiers and contact <a href="mailto:engfront@yeah.net">engfront@yeah.net</a> immediately if a security issue occurs.</li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div>
+            <img src="assets/images/logo-with-text.png" alt="Engineering Frontiers wordmark" />
+            <p>Engineering Frontiers - Building bridges across engineering disciplines for a sustainable and innovative future.</p>
+        </div>
+        <div class="footer-meta">
+            <p>&copy; 2025 China Architecture &amp; Culture Press</p>
+            <p>Flat 602, 6/F, Kai Ru Commercial Building, 2C Argyle Street - Hong Kong</p>
+            <p>Room 406, Building 2, Shengxingle Business Park, 1455 Nan Suzhou Road, Jing'an District, Shanghai</p>
+        </div>
+        <a href="#top" class="back-to-top">Back to top &uarr;</a>
+    </footer>
+
+    <script src="js/main.js" defer></script>
+    <script src="js/reviewer-data.js" defer></script>
+    <script src="js/reviewer.js" defer></script>
+</body>
+</html>

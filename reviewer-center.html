@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Engineering Frontiers | Reviewer Center</title>
+    <meta name="description" content="Engineering Frontiers reviewer center: submit evaluation scores, review-period notes, attachments, and inline comments in one secure form." />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="icon" type="image/png" href="assets/images/logo-primary.png" />
+</head>
+<body id="top" data-page="reviewers" data-view="center">
+    <header class="site-header">
+        <a href="index.html" class="brand" aria-label="Engineering Frontiers homepage">
+            <img src="assets/images/logo-with-text.png" alt="Engineering Frontiers wordmark" />
+        </a>
+        <nav class="primary-nav" aria-label="Primary">
+            <a href="index.html" class="nav-link" data-page="home">Home</a>
+            <a href="journal.html" class="nav-link" data-page="journal">Journal</a>
+            <a href="scope.html" class="nav-link" data-page="scope">Scope</a>
+            <a href="template.html" class="nav-link" data-page="template">Template</a>
+            <a href="articles.html" class="nav-link" data-page="articles">Issues</a>
+            <a href="contact.html" class="nav-link" data-page="contact">Submit</a>
+            <a href="reviewer-login.html" class="nav-link" data-page="reviewers">Reviewer Center</a>
+        </nav>
+        <a class="cta" href="contact.html">Submit Manuscript</a>
+    </header>
+
+    <main class="content reviewer-page">
+        <header class="page-heading reviewer-heading">
+            <div>
+                <p class="eyebrow">Reviewer Center</p>
+                <h1>Submit Your Peer-Review Package</h1>
+                <p>Provide reviewer details, manuscript identifiers, scores, timetable updates, and attach supporting review files. Everything is emailed straight to the editorial office.</p>
+            </div>
+            <div class="session-controls">
+                <span class="session-pill">Signed in as <strong data-session-user>--</strong></span>
+                <button type="button" class="ghost-button" data-logout>Sign out</button>
+            </div>
+        </header>
+
+        <section class="panel reviewer-layout">
+            <form
+                class="reviewer-form"
+                action="https://formsubmit.co/engfront@yeah.net"
+                method="POST"
+                enctype="multipart/form-data"
+                data-confirm="Send this reviewer package to the editorial office?"
+            >
+                <input type="hidden" name="_subject" value="Engineering Frontiers Reviewer Report" />
+                <input type="hidden" name="_captcha" value="false" />
+                <input type="hidden" name="reviewer_account" data-reviewer-hidden-name />
+                <div class="field-grid">
+                    <label>
+                        Reviewer Name
+                        <input type="text" name="reviewer_name" placeholder="Full name" required />
+                    </label>
+                    <label>
+                        Affiliation
+                        <input type="text" name="reviewer_institution" placeholder="University / Institute / Company" required />
+                    </label>
+                </div>
+                <div class="field-grid">
+                    <label>
+                        Manuscript ID
+                        <input type="text" name="manuscript_id" placeholder="EF-2025-001" required />
+                    </label>
+                    <label>
+                        Manuscript Score (0-100)
+                        <input type="number" name="manuscript_score" min="0" max="100" step="0.5" placeholder="90" required />
+                    </label>
+                </div>
+                <label>
+                    Review-Period Status
+                    <select name="review_period_status" required>
+                        <option value="On schedule">On schedule</option>
+                        <option value="Extension requested">Extension requested</option>
+                        <option value="Overdue">Overdue</option>
+                    </select>
+                </label>
+                <label>
+                    Review-Period Notes (optional)
+                    <textarea name="review_period_notes" rows="3" placeholder="Share timing updates, delays, or other schedule remarks."></textarea>
+                </label>
+                <label>
+                    Upload Reviewer File (optional)
+                    <input type="file" name="review_attachment" accept=".pdf,.doc,.docx,.zip,.rar" />
+                </label>
+                <label>
+                    Paste Reviewer Comments
+                    <textarea name="review_content" rows="8" placeholder="Paste or type the full review: key findings, concerns, and revision recommendations." required></textarea>
+                </label>
+                <div class="reviewer-actions">
+                    <button type="submit">Submit Review Package</button>
+                    <p class="microcopy">After submitting you will see the FormSubmit confirmation page and a copy will reach engfront@yeah.net.</p>
+                </div>
+            </form>
+
+            <aside class="reviewer-sidebar">
+                <div class="info-block">
+                    <h2>Submission Checklist</h2>
+                    <ul>
+                        <li>Please share initial feedback within 72 hours or flag an extension request in the status dropdown.</li>
+                        <li>Supported attachments: PDF, Word, or compressed archives up to 25 MB.</li>
+                        <li>Large media files can be emailed separately to <a href="mailto:engfront@yeah.net">engfront@yeah.net</a>.</li>
+                    </ul>
+                </div>
+                <div class="info-block">
+                    <h2>Session Tips</h2>
+                    <p>Close the browser or click "Sign out" to clear this device immediately. Inactive sessions expire automatically after 12 hours.</p>
+                    <button type="button" class="ghost-button" data-logout>Sign out and return to login</button>
+                </div>
+            </aside>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div>
+            <img src="assets/images/logo-with-text.png" alt="Engineering Frontiers wordmark" />
+            <p>Engineering Frontiers - Building bridges across engineering disciplines for a sustainable and innovative future.</p>
+        </div>
+        <div class="footer-meta">
+            <p>&copy; 2025 China Architecture &amp; Culture Press</p>
+            <p>Flat 602, 6/F, Kai Ru Commercial Building, 2C Argyle Street - Hong Kong</p>
+            <p>Room 406, Building 2, Shengxingle Business Park, 1455 Nan Suzhou Road, Jing'an District, Shanghai</p>
+        </div>
+        <a href="#top" class="back-to-top">Back to top &uarr;</a>
+    </footer>
+
+    <script src="js/main.js" defer></script>
+    <script src="js/reviewer-data.js" defer></script>
+    <script src="js/reviewer.js" defer></script>
+</body>
+</html>

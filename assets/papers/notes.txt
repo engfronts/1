@@ -1,0 +1,12 @@
+Catalogue 
+01 Predictive Modeling of Mortality Risk in Heart Failure Patients Using 
+Logistic Regression Analysis of Clinical Features 
+17 Forecasting China’s Nuclear Power Generation to 2030: An ARIMA Model
+Based Trend Analysis 
+26 Editorial: From Optimization to Adaptation: The Resilience Paradigm in 
+Twenty-First Century Engineering 
+28 Editorial: Advancing Engineering Excellence Through Cross-Disciplinary 
+Integration and Innovation 
+29 Editorial: Pioneering Multidisciplinary Engineering Solutions for Global 
+Challenges
+顺序按照文章顺序，此外汇总为本期全部的
